@@ -1,15 +1,17 @@
-from alarm_clock import AlarmClock
+from customer import Customer
+# Task 2: Shopping Cart
 
-# String for times
+customer_1 = Customer("John")
 
-alarm_one = AlarmClock()
-alarm_one.set_current_time("12:00")
-alarm_one.set_alarm_time("12:30")
-alarm_one.toggle_alarm("on")
-print(alarm_one.display_alarm_clock())
-
-alarm_two = AlarmClock()
-alarm_two.set_current_time("1:48 pm")
-alarm_two.set_alarm_time("3:00 am")
-alarm_two.toggle_alarm("off")
-print(alarm_two.display_alarm_clock())
+# End goal:
+# print customer's name
+print(customer_1.name)
+#call the customers add product (x3) adding 3 objects
+customer_1.add_product_to_cart("apple", 1, "fruit")
+customer_1.add_product_to_cart("carrot", 1, "veggie")
+customer_1.add_product_to_cart("steak", 5, "meat")
+#call customers view products method
+customer_1.display_cart
+#call customers shopping cart get cart total method. Capture the total the method returns in a variable and print
+#call the customers shopping carts empty cart method
+#check if cart is empty
