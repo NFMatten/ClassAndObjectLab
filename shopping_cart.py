@@ -7,8 +7,7 @@ class ShoppingCart:
     def calc_total_of_cart(self):
         pass
 
-    def add_product(self, name, price, category):
-        product_to_add = Product(name, price, category)
+    def add_product(self, product_to_add):
         self.product_list.append(product_to_add)
       
     def clear_cart(self):
